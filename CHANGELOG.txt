@@ -1,0 +1,20 @@
+Sabrina Markon - PHPSiteScripts.com - Changelog for TAE Enhanced v. 8.1E - THIS VERSION IS THE ONE WITH THE ENCRYPTED PASSWORDS
+
+February 14, 2016 - Added bounceemail settings field into bounce_viewer.php so webmaster can update the bounce email address from the admin panel.
+
+February 15, 2016 - Disovered AdPack order page missing. Found that this was because AdPacks previously only came with a matrix position order (and no matrix on TAEs)
+		  - Fixed to allow pricing of AdPacks from admin area and ordering from members area.
+
+February 16, 2016 - Fixed adpack_order.php to say "enabled" in mysql query instead of the incorrect "enable".
+
+February 23, 2016 - Fixed bug where price_interval switch was missing from offerpage.php. price_interval for offerpage.php and oto.php affect the ability of the admin to charge monthly or lifetime
+                    for those packages.
+
+February 26, 2016 - Added price_interval to Special Offer in advertise.php
+
+February 26, 2016 - Customized files that called upgrade_superjv and upgradejv to pass parameters to distinguish between a paid cash upgrade and an unpaid one, as well as to pass the referid value directly. 
+		  - Removed lines which deliberately negated upgrade commission values when the upgrade is gained by purchase of a special offer or OTO. The result will be that sponsors should earn commissions if > 0
+		    two times for an offer or an oto package (once for the advertising commission in the offer, and once for the upgrade if one is included in the offer purchased)
+		  - A live purchase needs to take place to test the last point with certainty that the issue is solved.
+
+

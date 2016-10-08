@@ -1,0 +1,39 @@
+SABRINA - Set up filters for BOUNCE SCRIPT
+
+Login to Cpanel
+
+Click "Global Email Filters" (previously "Account Level Filtering")
+
+Filter Name: Bounce
+
+Rules:
+
+To
+contains
+bounce@yourdomain.com
+
+Actions:
+1) Pipe to a program
+|/home/CPANEL_USERNAME/public_html/bounce.php
+
+2) Discard Message
+
+For STEP 1) above, the path should be your path exactly to the bounce.php file (main folder of your TAE site)
+
+3) CHMOD bounce.php 755
+
+** if doesn't work, you might need bounce.php to be CHMOD 777 but try 755 first. 
+
+--------------------------
+
+Cpanel "Default Address"
+Click "Advanced Options"
+Select "Pipe to a program"
+public_html/bounce.php
+
+
+--------------------------
+
+4) send a few test solo ads from your site. Make sure there are members who have bouncing addresses (bad in some way) first though! For instance make some fake test accounts with bad email addresses or full inboxes of your own to test with.
+Wait awhile because it sometimes takes awhile for the receiving server to send back the bounced messages.
+
