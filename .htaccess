@@ -1,0 +1,9 @@
+DirectoryIndex index.php
+
+RewriteEngine On
+RewriteRule ^link/([0-9]+)[/]*$ /redirect.php?id=$1
+RewriteRule ^link/([a-zA-Z0-9]+)[/]*$ /redirect.php?tag=$1
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>

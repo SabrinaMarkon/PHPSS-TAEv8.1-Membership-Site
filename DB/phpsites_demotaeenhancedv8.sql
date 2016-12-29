@@ -177,8 +177,8 @@ DROP TABLE IF EXISTS `advertise`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `advertise` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(30) NOT NULL DEFAULT '',
-  `bannerurl` varchar(70) NOT NULL DEFAULT '',
+  `name` varchar(255) NOT NULL DEFAULT '',
+  `bannerurl` varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
