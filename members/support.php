@@ -160,7 +160,7 @@ if($action == " Send Support Request ") {
 	echo"            <td><font size=2 face='$fonttype' color='$fontcolour'> $tid&nbsp;</font></td>";
 	echo"            <td><font size=2 face='$fonttype' color='$fontcolour'> $subj&nbsp;</font></td>";
 	echo"            <td><font size=2 face='$fonttype' color='$fontcolour'> $ticketstatus&nbsp;</font></td>";
-	echo"            <td><form method=\"post\"><input type=\"submit\" value=\"View\" class=\"form-button\"><input type=\"hidden\" name=\"action\" value=\"view ticket\"><input type=\"hidden\" name=\"page\" value=\"support\"><input type=\"hidden\" name=\"tid\" value=\"$tid\"><input type=\"hidden\" name=\"userid\" value=\"$userid\"></form></td>";
+	echo"            <td><form method=\"post\"><input type=\"submit\" value=\"View\" class=\"form-button\"><input type=\"hidden\" name=\"action\" value=\"view ticket\"><input type=\"hidden\" name=\"page\" value=\"support\"><input type=\"hidden\" name=\"tid\" value=\"$tid\"></form></td>";
 	echo"        </tr>";
 
 	        $x++;
@@ -245,7 +245,7 @@ if($action == " Send Support Request ") {
 	echo"            <td><font size=2 face='$fonttype' color='$fontcolour'> $tid&nbsp;</font></td>";
 	echo"            <td><font size=2 face='$fonttype' color='$fontcolour'> $subj&nbsp;</font></td>";
 	echo"            <td><font size=2 face='$fonttype' color='$fontcolour'> $ticketstatus&nbsp;</font></td>";
-	echo"            <td><form method=\"post\"><input type=\"submit\" value=\"View\" class=\"form-button\"><input type=\"hidden\" name=\"action\" value=\"view ticket\"><input type=\"hidden\" name=\"page\" value=\"support\"><input type=\"hidden\" name=\"tid\" value=\"$tid\"><input type=\"hidden\" name=\"userid\" value=\"$userid\"></form></td>";
+	echo"            <td><form method=\"post\"><input type=\"submit\" value=\"View\" class=\"form-button\"><input type=\"hidden\" name=\"action\" value=\"view ticket\"><input type=\"hidden\" name=\"page\" value=\"support\"><input type=\"hidden\" name=\"tid\" value=\"$tid\"></form></td>";
 	echo"        </tr>";
 
 	        $x++;
@@ -330,7 +330,7 @@ if($action == " Send Support Request ") {
 	echo"<form method=post>";
 	echo"&nbsp;<p align='center'>Reply To This Ticket:</p>";
 ?>
-<p align="center"><form method="post"><textarea rows="15" cols="40" name="reply" cols="20"></textarea><br><br><input type=hidden name="tid" value="<?php echo $tid ?>"><input type=hidden name="origid" value="<?php echo $origid ?>"><input type=hidden name="timesubmitted" value="<?php echo $timesubmitted ?>"><input type=hidden name="memberid" value="<?php echo $memberid ?>"><input type="hidden" name="page" value="support"><input type='hidden' name='adm_passwd' value='<?php echo $adm_passwd ?>'><input type="hidden" name="action" value="reply to ticket"><input type=hidden name='userid' value='<?php echo $userid ?>'><br><br><input type=submit name=Submit class="form-button" value="Submit Reply"></form></p><p></p>
+<p align="center"><form method="post"><textarea rows="15" cols="40" name="reply" cols="20"></textarea><br><br><input type=hidden name="tid" value="<?php echo $tid ?>"><input type=hidden name="origid" value="<?php echo $origid ?>"><input type=hidden name="timesubmitted" value="<?php echo $timesubmitted ?>"><input type=hidden name="memberid" value="<?php echo $memberid ?>"><input type="hidden" name="page" value="support"><input type='hidden' name='adm_passwd' value='<?php echo $adm_passwd ?>'><input type="hidden" name="action" value="reply to ticket"><br><br><input type=submit name=Submit class="form-button" value="Submit Reply"></form></p><p></p>
 <?php
 	}
 
@@ -475,8 +475,8 @@ $id=mysql_result($mresult,$x,"id");
 	echo"      <b>Userid: $userid</b><p align=\"center\">";
 	echo"      <b>Name:   $name";
 	echo"      </b>";
-	echo"<p align=\"center\"><form method=\"post\"><input type=\"hidden\" name=\"action\" value=\"view open tickets\"><input type=\"hidden\" name=\"page\" value=\"support\"><input type=\"hidden\" name=\"userid\" value=\"$userid\"><input type=\"submit\" value=\"View Currently Open Tickets\" class=\"form-button\"></form><p align=\"center\">";
-	echo"<p align=\"center\"><form method=\"post\"><input type=\"hidden\" name=\"action\" value=\"view closed tickets\"><input type=\"hidden\" name=\"page\" value=\"support\"><input type=\"hidden\" name=\"userid\" value=\"$userid\"><input type=\"submit\" value=\"View Closed Tickets\" class=\"form-button\"></form><p align=\"center\">Or Create A ";
+	echo"<p align=\"center\"><form method=\"post\"><input type=\"hidden\" name=\"action\" value=\"view open tickets\"><input type=\"hidden\" name=\"page\" value=\"support\"><input type=\"submit\" value=\"View Currently Open Tickets\" class=\"form-button\"></form><p align=\"center\">";
+	echo"<p align=\"center\"><form method=\"post\"><input type=\"hidden\" name=\"action\" value=\"view closed tickets\"><input type=\"hidden\" name=\"page\" value=\"support\"><input type=\"submit\" value=\"View Closed Tickets\" class=\"form-button\"></form><p align=\"center\">Or Create A ";
 	echo"      New Support Request Below:<p align=\"center\"><hr><p align=\"center\">&nbsp;Please fill in all fields.  Your request will be answered in the order it was received.</b><p>&nbsp;</td>";
 	echo"    </tr>";
 	echo"  </table>";
@@ -520,7 +520,7 @@ $id=mysql_result($mresult,$x,"id");
 
 	echo"</table>";
 	echo"<p align=\"center\">";
-	echo"<input type=hidden name=page value=\"support\"><input type=hidden name=userid value=\"$userid\"></p>";
+	echo"<input type=hidden name=page value=\"support\"></p>";
 	echo"<center><input type=submit name=Submit value=\"Submit Request\" class=\"form-button\">";
 	echo"<input type=hidden name=action value=\" Send Support Request \"> </p>";
 	echo"</form>";
