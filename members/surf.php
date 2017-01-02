@@ -20,14 +20,16 @@ if ($userid == "")
 		$surftimer = $superjvsurftimer;
 	}
 	$_SESSION['surftime'] = $surftimer; // set the surftime
-	//check for new window
-	if(isset($_SESSION['surftimestart']) && time()-$_SESSION['surftimestart'] < $_SESSION['surftime']+1){
+	//check for new window if manual surf :
+	if ($autosurf != 'yes') {
+		if(isset($_SESSION['surftimestart']) && time()-$_SESSION['surftimestart'] < $_SESSION['surftime']+1){
 			include "../header.php";
 			include "../style.php";
 			echo '<center><p><b>You can not surf in more than one window..<br> Or Refresh/Reload this window after '.($_SESSION['surftime']+1 -(time()-$_SESSION['surftimestart'])).' seconds</b></p></center>';
 			include "../footer.php";
 			mysql_close($dblink);
-			exit();		
+			exit();
+		}
 	}
 	//get the surf url
 	$surfrs1 = mysql_query("SELECT * FROM surfurls WHERE surfpoint>=$earn AND userid <> '$userid' AND approved='1'");

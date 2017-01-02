@@ -20,56 +20,56 @@ include "../style.php";
 
     if ($action=="save") {
 
-        
-        $update=mysql_query("update settings set setting='$bannerpricep' where name='bannerprice'");
-        $update=mysql_query("update settings set setting='$pointpricep' where name='pointprice'");
-        $update=mysql_query("update settings set setting='$solopricep' where name='soloprice'") ;
-        $update=mysql_query("update settings set setting='$solopointpricep' where name='solopointprice'") ;
-        $update=mysql_query("update settings set setting='$bannerpointpricep' where name='bannerpointprice'") ;
-        $update=mysql_query("update settings set setting='$procommissionp' where name='procommission'") ;
-        $update=mysql_query("update settings set setting='$propostp' where name='propost'");
-        $update=mysql_query("update settings set setting='$propointsp' where name='propoints'");
-        $update=mysql_query("update settings set setting='$propointsmonthlyp' where name='propointsmonthly'");
-        $update=mysql_query("update settings set setting='$prorefpointsp' where name='prorefpoints'");
-        $update=mysql_query("update settings set setting='$proreadearnp' where name='proreadearn'") ;
-        $update=mysql_query("update settings set setting='$proclickearnp' where name='proclickearn'");
-        $update=mysql_query("update settings set setting='$buttonpointpricep' where name='buttonpointprice'");
-        $update=mysql_query("update settings set setting='$buttonpricep' where name='buttonprice'");
-        $update=mysql_query("update settings set setting='$tlinkprice1p' where name='tlinkprice1'");
-        $update=mysql_query("update settings set setting='$tlinkprice2p' where name='tlinkprice2'");
-        $update=mysql_query("update settings set setting='$tlinkprice3p' where name='tlinkprice3'");
-        $update=mysql_query("update settings set setting='$probannerearnp' where name='probannerearn'");
-        $update=mysql_query("update settings set setting='$navpricep' where name='navprice'");
-        $update=mysql_query("update settings set setting='$navpricepointsp' where name='navpricepoints'");
-        $update=mysql_query("update settings set setting='$navmaxp' where name='navmax'");
-  $update=mysql_query("update settings set setting='$topnavmaxp' where name='topnavmax'");
-         $update=mysql_query("update settings set setting='$prosavep' where name='prosave'");
-        $update=mysql_query("update settings set setting='$prourlsp' where name='prourls'");
-        $update=mysql_query("update settings set setting='$prosavesolosp' where name='prosavesolos'");
-        $update=mysql_query("update settings set setting='$protrafficearnp' where name='protrafficearn'");
-        $update=mysql_query("update settings set setting='$loginpricep' where name='loginprice'");
-        $update=mysql_query("update settings set setting='$loginpricepointsp' where name='loginpricepoints'");
-        $update=mysql_query("update settings set setting='$prohtmlearnp' where name='prohtmlearn'");
-        $update=mysql_query("update settings set setting='$prosavehtmlp' where name='prosavehtml'");
-       $update=mysql_query("update settings set setting='$proposthtmlp' where name='proposthtml'");
-       $update=mysql_query("update settings set setting='$prorefloginp' where name='proreflogin'");
-       $update=mysql_query("update settings set setting='$propercentp' where name='propercent'");
-       $update=mysql_query("update settings set setting='$probuycomp' where name='probuycom'");
-		$update=mysql_query("update settings set setting='$otocommissionprop' where name='otocommissionpro'");
-		$update=mysql_query("update settings set setting='$otocommissionjvp' where name='otocommissionjv'");
-		$update=mysql_query("update settings set setting='$otocommissionsjvp' where name='otocommissionsjv'");
-       $update=mysql_query("update settings set setting='$tlinkpoints1p' where name='tlinkpoints1'");
-        $update=mysql_query("update settings set setting='$tlinkpoints2p' where name='tlinkpoints2'");
-        $update=mysql_query("update settings set setting='$tlinkpoints3p' where name='tlinkpoints3'");
-        $update=mysql_query("update settings set setting='$probuttonclickp' where name='probuttonclick'");
-        $update=mysql_query("update settings set setting='$proptcearnp' where name='proptcearn'");
-        $update=mysql_query("update settings set setting='$prohotlinkearnp' where name='prohotlinkearn'");
-      $update=mysql_query("update settings set setting='$hotlinkprice1p' where name='hotlinkprice1'");
-        $update=mysql_query("update settings set setting='$hotlinkpointprice1p' where name='hotlinkpointprice1'");
-        $update=mysql_query("update settings set setting='$hotlinkprice2p' where name='hotlinkprice2'");
-        $update=mysql_query("update settings set setting='$hotlinkpointprice2p' where name='hotlinkpointprice2'");
-        $update=mysql_query("update settings set setting='$hotlinkprice3p' where name='hotlinkprice3'");
-        $update=mysql_query("update settings set setting='$hotlinkpointprice3p' where name='hotlinkpointprice3'");
+
+$update=mysql_query("update settings set setting='$bannerpricep' where name='bannerprice'");
+$update=mysql_query("update settings set setting='$pointpricep' where name='pointprice'");
+$update=mysql_query("update settings set setting='$solopricep' where name='soloprice'") ;
+$update=mysql_query("update settings set setting='$solopointpricep' where name='solopointprice'") ;
+$update=mysql_query("update settings set setting='$bannerpointpricep' where name='bannerpointprice'") ;
+$update=mysql_query("update settings set setting='$procommissionp' where name='procommission'") ;
+$update=mysql_query("update settings set setting='$propostp' where name='propost'");
+$update=mysql_query("update settings set setting='$propointsp' where name='propoints'");
+$update=mysql_query("update settings set setting='$propointsmonthlyp' where name='propointsmonthly'");
+$update=mysql_query("update settings set setting='$prorefpointsp' where name='prorefpoints'");
+$update=mysql_query("update settings set setting='$proreadearnp' where name='proreadearn'") ;
+$update=mysql_query("update settings set setting='$proclickearnp' where name='proclickearn'");
+$update=mysql_query("update settings set setting='$buttonpointpricep' where name='buttonpointprice'");
+$update=mysql_query("update settings set setting='$buttonpricep' where name='buttonprice'");
+$update=mysql_query("update settings set setting='$tlinkprice1p' where name='tlinkprice1'");
+$update=mysql_query("update settings set setting='$tlinkprice2p' where name='tlinkprice2'");
+$update=mysql_query("update settings set setting='$tlinkprice3p' where name='tlinkprice3'");
+$update=mysql_query("update settings set setting='$probannerearnp' where name='probannerearn'");
+$update=mysql_query("update settings set setting='$navpricep' where name='navprice'");
+$update=mysql_query("update settings set setting='$navpricepointsp' where name='navpricepoints'");
+$update=mysql_query("update settings set setting='$navmaxp' where name='navmax'");
+$update=mysql_query("update settings set setting='$topnavmaxp' where name='topnavmax'");
+$update=mysql_query("update settings set setting='$prosavep' where name='prosave'");
+$update=mysql_query("update settings set setting='$prourlsp' where name='prourls'");
+$update=mysql_query("update settings set setting='$prosavesolosp' where name='prosavesolos'");
+$update=mysql_query("update settings set setting='$protrafficearnp' where name='protrafficearn'");
+$update=mysql_query("update settings set setting='$loginpricep' where name='loginprice'");
+$update=mysql_query("update settings set setting='$loginpricepointsp' where name='loginpricepoints'");
+$update=mysql_query("update settings set setting='$prohtmlearnp' where name='prohtmlearn'");
+$update=mysql_query("update settings set setting='$prosavehtmlp' where name='prosavehtml'");
+$update=mysql_query("update settings set setting='$proposthtmlp' where name='proposthtml'");
+$update=mysql_query("update settings set setting='$prorefloginp' where name='proreflogin'");
+$update=mysql_query("update settings set setting='$propercentp' where name='propercent'");
+$update=mysql_query("update settings set setting='$probuycomp' where name='probuycom'");
+$update=mysql_query("update settings set setting='$otocommissionprop' where name='otocommissionpro'");
+$update=mysql_query("update settings set setting='$otocommissionjvp' where name='otocommissionjv'");
+$update=mysql_query("update settings set setting='$otocommissionsjvp' where name='otocommissionsjv'");
+$update=mysql_query("update settings set setting='$tlinkpoints1p' where name='tlinkpoints1'");
+$update=mysql_query("update settings set setting='$tlinkpoints2p' where name='tlinkpoints2'");
+$update=mysql_query("update settings set setting='$tlinkpoints3p' where name='tlinkpoints3'");
+$update=mysql_query("update settings set setting='$probuttonclickp' where name='probuttonclick'");
+$update=mysql_query("update settings set setting='$proptcearnp' where name='proptcearn'");
+$update=mysql_query("update settings set setting='$prohotlinkearnp' where name='prohotlinkearn'");
+$update=mysql_query("update settings set setting='$hotlinkprice1p' where name='hotlinkprice1'");
+$update=mysql_query("update settings set setting='$hotlinkpointprice1p' where name='hotlinkpointprice1'");
+$update=mysql_query("update settings set setting='$hotlinkprice2p' where name='hotlinkprice2'");
+$update=mysql_query("update settings set setting='$hotlinkpointprice2p' where name='hotlinkpointprice2'");
+$update=mysql_query("update settings set setting='$hotlinkprice3p' where name='hotlinkprice3'");
+$update=mysql_query("update settings set setting='$hotlinkpointprice3p' where name='hotlinkpointprice3'");
 $update=mysql_query("update settings set setting='$ptc1pointsp' where name='ptc1points'");
 $update=mysql_query("update settings set setting='$ptc2pointsp' where name='ptc2points'");
 $update=mysql_query("update settings set setting='$ptc3pointsp' where name='ptc3points'");
@@ -213,6 +213,7 @@ $update=mysql_query("update settings set setting='$hheaderadbottomnotefontfacep'
 $update=mysql_query("update settings set setting='$hheaderadbottomnotefontsizep' where name='hheaderadbottomnotefontsize'");
 $update=mysql_query("update settings set setting='$hheaderadbottomnotebgcolorp' where name='hheaderadbottomnotebgcolor'");
 $update=mysql_query("update settings set setting='$autoapproveenablep' where name='autoapproveenable'");
+$update=mysql_query("update settings set setting='$autosurfp' where name='autosurf'");
 $update=mysql_query("update settings set setting='$autoapproveenablesurfp' where name='autoapproveenablesurf'");
 $update=mysql_query("update settings set setting='$prosurfurlsp' where name='prosurfurls'");
 $update=mysql_query("update settings set setting='$jvsurfurlsp' where name='jvsurfurls'");
@@ -254,6 +255,10 @@ $update=mysql_query("update settings set setting='$showperlevelmembercountp' whe
 <hr>
 <table width="650"><tr><td><p align="left">
 Do you want to enable Auto-Approve for Solo Ads?&nbsp;<select name="autoapproveenablep"><option value="yes" <?php if ($autoapproveenable == "yes") { echo "selected"; } ?>>YES</option><option value="no" <?php if ($autoapproveenable != "yes") { echo "selected"; } ?>>NO</option></select>
+</td></td></table>
+<hr>
+<table width="650"><tr><td><p align="left">
+Do you want to enable Auto-Surf? <select name="autosurfp"><option value="yes" <?php if ($autosurf == "yes") { echo "selected"; } ?>>YES</option><option value="no" <?php if ($autosurf != "yes") { echo "selected"; } ?>>NO</option></select>
 </td></td></table>
 <hr>
 <table width="650"><tr><td><p align="left">

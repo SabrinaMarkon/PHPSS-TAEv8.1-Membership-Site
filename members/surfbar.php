@@ -184,7 +184,8 @@ $show = "Your Surf Page Visit Will Be Counted After";
 
 <span id="plzwait">Your Surf Page Visit Will Be Counted After <?php echo $surfwaittime;?> seconds</span>
 	<script type="text/javascript">
-	counter = <?php echo $surfwaittime;?>;
+	var autosurf = '<?php echo $autosurf ?>';
+	var counter = <?php echo $surfwaittime;?>;
 	function countdown() {
 		if ((0 <= 100) || (0 > 0)) {
 			counter--;
@@ -194,8 +195,13 @@ $show = "Your Surf Page Visit Will Be Counted After";
 
 			} else if(counter==0) {
 
-				document.getElementById("plzwait").innerHTML = '<div id="coord" onclick="submitform(xcoord(event))" class="cd"></div>';
-
+				if (autosurf == 'yes') {
+					// do not require the user to click anything to proceed to the next surf site.
+					top.location = 'surf.php';
+				} else {
+					// user needs to pass a human click test and manually proceed to the next surf site.
+					document.getElementById("plzwait").innerHTML = '<div id="coord" onclick="submitform(xcoord(event))" class="cd"></div>';
+				}
 
 			}
 		}
