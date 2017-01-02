@@ -112,6 +112,7 @@ if($userid != "") {
 				}
 			}
 			?>
+			<br><center><?php include("../banners2.php"); ?></center>
 		</center>
 		<script>
 			setTimeout("top.location = 'surf.php';", 2000);
@@ -210,7 +211,10 @@ if($userid != "") {
 			</script>
 			<noscript><h2>You need a javascript enable browser to surf</h2></noscript>
 		</center>
-
+		<br>
+		<center>
+			<?php include("../banners2.php"); ?>
+		</center>
 		</body>
 		</html>
 	<?php

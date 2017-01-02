@@ -87,7 +87,7 @@ if($userid != "")
 		<link rel="shortcut icon" href="/favicon.ico">
 
 	</head>
-	<frameset ROWS="40,*" BORDER=0 FRAMEBORDER=1 FRAMESPACING=0>
+	<frameset ROWS="185,*" BORDER=0 FRAMEBORDER=1 FRAMESPACING=0>
 		<frame name="header" scrolling="no" noresize marginheight="1" marginwidth="1" target="main" src="surfbar.php">
 		<frame name="main" src="<? echo $url; ?>">
 	</frameset>
