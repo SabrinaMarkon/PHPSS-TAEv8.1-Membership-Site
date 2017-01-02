@@ -1,14 +1,7 @@
 <?php
 include "../control.php";
-if( ($userid == "") || ($password=="") )
+if($userid != "")
 {
-	include "../header.php";
-	include "../style.php";
-	echo '<p>You must be logged in to access this site. Please <a href="../index.php">click here</a> to login.</p>';
-	include "../footer.php";
-	mysql_close($dblink);
-	exit();
-}else{
 	if ($memtype=="PRO") {
 		$earn = $prosurfcreditspersite;
 		$surftimer = $prosurftimer;
@@ -100,5 +93,14 @@ if( ($userid == "") || ($password=="") )
 	</frameset>
 	</html>
 	<?php
+}
+else
+{
+	include "../header.php";
+	include "../style.php";
+	echo '<p>You must be logged in to access this site. Please <a href="../index.php">click here</a> to login.</p>';
+	include "../footer.php";
+	mysql_close($dblink);
+	exit();
 }
 ?>
