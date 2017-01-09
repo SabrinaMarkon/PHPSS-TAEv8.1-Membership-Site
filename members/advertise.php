@@ -45,7 +45,7 @@ if($_POST['action'] = "resetbuttons") {
 	   if(@mysql_num_rows($sql)) mysql_query("DELETE FROM fullloginadviews where fullloginadid='".intval($_POST['delfullloginad'])."'");
    }
  if($_POST['delfeaturedad']) {
-	   $sql = mysql_query("DELETE FROM ptcads where userid='".$userid."' and id = '".intval($_POST['delfeaturedad'])."' LIMIT 1");
+	   $sql = mysql_query("DELETE FROM featuredads where userid='".$userid."' and id = '".intval($_POST['delfeaturedad'])."' LIMIT 1");
 	   if(@mysql_num_rows($sql)) mysql_query("DELETE FROM featuredadclicks where featuredadid='".intval($_POST['delfeaturedad'])."'");
    }
   if($_POST['delhheadlinead']) {
