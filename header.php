@@ -23,7 +23,7 @@ margin-bottom: 0px;
 </head>
 <body>
 <center><a href="http://phpsitescripts.com">
-<img src="<?php echo $domain ?>/images/header.jpg" valign=top border=0></a>
+<img src="<?php echo $domain ?>/images/header.jpg" valign=top border=0 width="1160"></a>
 <br>
 
 <!-- START TOP MENU -->
