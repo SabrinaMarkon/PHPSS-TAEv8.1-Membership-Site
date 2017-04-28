@@ -80,8 +80,7 @@ while ($line4 = mysql_fetch_array($result4)) {
 //now we've got all we need, so blast the ad out!
 
     $Subject = "[" . $sitename . " Solo] ".$subject;
-    $Message .= ".<br><br>";
-    $Message .= $adbody;
+    $Message = $adbody;
     $Message .= "<br><br>--------------------------------------------------------------<br><br>";
     if ($memtypeq == "JV Member") {
         $Message .= "Click the link to receive ".$jvclickearn." credits<br><br>";
