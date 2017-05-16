@@ -25,7 +25,6 @@ $userid = $_POST['userid'];
 
         echo "<p><center>".$quantity." blank top navigation link has been added to ".$userid."'s account.</p></center>";
         echo "</td></tr></table>";
-    }
 
 include "../footer.php";
 
