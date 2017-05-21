@@ -98,7 +98,6 @@ while ($line4 = mysql_fetch_array($result4)) {
 	$Subject = str_replace("~userid~",$useridq,$Subject);
 	$Subject = str_replace("~fname~",$firstnameq,$Subject);
 
-    $mail2 = clone $mail;
 	if ($replyemail == $bounceemail) {
 		$return_path = "user-".$useridq."-".$bounceemail;
 	}
@@ -107,6 +106,7 @@ while ($line4 = mysql_fetch_array($result4)) {
 	}
 
 	if ($mailermethod == "smtp") {
+	$mail2 = clone $mail;
 	$mail2->SetFrom($return_path, $sitename);
 	$mail2->AddReplyTo($return_path,$sitename);
 	$mail2->Subject = $Subject;
